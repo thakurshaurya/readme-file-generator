@@ -11,7 +11,7 @@ type PagemiddleProps = {
 function Pagemiddle({ register, errors }: PagemiddleProps) {
   return (
     <>
-      <div className="flex w-full justify-around min-h-[82vh] p-5 gap-5 mt-5">
+      <div className="page-split flex w-full justify-around min-h-[82vh] p-5 gap-5 mt-5">
         <div className="hover-3d h-1/2">
           <figure className=" rounded-xl">
             <Image src="/Webinar-amico.png" alt="Card image" width={600} height={600} />

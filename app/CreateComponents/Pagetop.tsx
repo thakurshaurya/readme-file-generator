@@ -11,7 +11,7 @@ type PagetopProps = {
 function Pagetop({ register, errors }: PagetopProps) {
     return (
         <>
-            <div className="min-h-[83vh] w-full flex justify-around py-20 px-10 items-center">
+            <div className="page-split min-h-[83vh] w-full flex justify-around py-20 px-10 items-center">
                 <div className="flex flex-col items-start justify-center ">
                     <div className="text-4xl font-bold text-left text-emerald-200 mb-5">
                         <p>Enter Your Github Username</p>

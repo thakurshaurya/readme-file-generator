@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Pagetop() {
     return (
-        <div className="flex w-full justify-around min-h-[82vh] mt-15 mx-5 ">
+        <div className="page-split flex w-full justify-around min-h-[82vh] mt-15 mx-5 ">
             <div className="text-6xl text-emerald-200 font-stretch-extra-condensed w-90">
                 Generate The Profile You Desire With The Help Of AI
                 <div className="mt-7 text-xl">

@@ -1,0 +1,95 @@
+/* ============================================================
+   responsive.css
+   Makes the app adapt to phones, tablets, and desktops.
+   All responsive/layout overrides live here.
+   Breakpoints: mobile <= 640px, tablet/small <= 1024px.
+   ============================================================ */
+
+/* ---- Global safety nets ---------------------------------- */
+
+/* Never allow a stray fixed-width element to cause sideways scroll. */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Make every image / illustration fluid instead of a fixed 600px. */
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---- Two-column hero/form sections ----------------------- */
+/* Components add `page-split` to their flex row. On desktop it stays a
+   side-by-side row; on tablet and below it stacks into a centered column.
+   Nothing in the markup sets flex-direction, so these rules win cleanly. */
+
+@media (max-width: 1024px) {
+  .page-split {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    min-height: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Any fixed-width child (e.g. the `w-90` headline column) goes full width. */
+  .page-split > * {
+    width: 100%;
+    max-width: 42rem;
+  }
+
+  .page-split .w-90,
+  .page-split .w-1\/2 {
+    width: 100%;
+  }
+
+  /* Center the form/headline blocks that were left-aligned on desktop. */
+  .page-split .items-start {
+    align-items: center;
+  }
+}
+
+/* ---- Fluid headings -------------------------------------- */
+/* The big hero headings use text-6xl / text-4xl, which overflow small
+   screens. Scale them down fluidly at smaller widths. */
+
+@media (max-width: 1024px) {
+  .page-split .text-6xl {
+    font-size: clamp(2rem, 7vw, 3rem);
+    line-height: 1.1;
+  }
+
+  .page-split .text-4xl {
+    font-size: clamp(1.5rem, 5.5vw, 2.25rem);
+    line-height: 1.15;
+  }
+}
+
+/* ---- Header title ---------------------------------------- */
+/* Keep the top navbar title from overflowing on narrow phones. */
+
+@media (max-width: 640px) {
+  .navbar .text-4xl {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+}
+
+/* ---- Landing feature grid & long text -------------------- */
+/* Prevent very long words / URLs in the generated markdown preview and
+   feature copy from forcing horizontal scroll on phones. */
+
+@media (max-width: 640px) {
+  pre,
+  code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
