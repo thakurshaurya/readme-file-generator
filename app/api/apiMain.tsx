@@ -124,7 +124,7 @@ export function buildFallbackReadme(payload: ReadmeGenerationPayload) {
         readme += `\n## 💻 Tech Stack:\n${skillsLine}\n`;
     }
 
-    readme += `\n## 📊 GitHub Stats:\n<div align="center">\n\n![](https://github-readme-stats.vercel.app/api?username=${username}&theme=radical&hide_border=false&include_all_commits=true&count_private=true)\n![](https://streak-stats.demolab.com/?user=${username}&theme=radical&hide_border=false)\n![](https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&theme=radical&include_all_commits=true&count_private=true&layout=compact)\n\n</div>\n`;
+    readme += `\n## 📊 GitHub Stats:\n<div align="center">\n\n![](https://github-readme-stats.shion.dev/api?username=${username}&theme=radical&hide_border=false&include_all_commits=true&count_private=true)\n![](https://streak-stats.demolab.com/?user=${username}&theme=radical&hide_border=false)\n![](https://github-readme-stats.shion.dev/api/top-langs/?username=${username}&theme=radical&include_all_commits=true&count_private=true&layout=compact)\n\n</div>\n`;
 
     readme += `\n## 👀 Profile Views:\n<div align="center">\n  <img src="https://komarev.com/ghpvc/?username=${username}&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views" />\n</div>\n`;
 
