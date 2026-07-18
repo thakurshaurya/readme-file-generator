@@ -81,9 +81,9 @@ ${skillsMarkdown || "No skills provided, skip this section entirely."}
 5. "## 📊 GitHub Stats:" section with this exact HTML block:
 <div align="center">
 //Maintain a single line gap here 
-![](https://github-readme-stats.vercel.app/api?username=${username}&theme=radical&hide_border=false&include_all_commits=true&count_private=true)
+![](https://github-readme-stats.shion.dev/api?username=${username}&theme=radical&hide_border=false&include_all_commits=true&count_private=true)
 ![](https://streak-stats.demolab.com/?user=${username}&theme=radical&hide_border=false)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&theme=radical&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=${username}&theme=radical&include_all_commits=true&count_private=true&layout=compact)
 
 </div>
 
