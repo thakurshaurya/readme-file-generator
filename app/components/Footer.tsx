@@ -1,7 +1,7 @@
 "use client"
 
 function Footer() {
-    const linkedinUrl = 'https://www.linkedin.com/in/shaurya-thakur-880912327/'
+    const linkedinUrl = 'https://www.linkedin.com/in/thakur-shaurya/'
     const githubUrl = 'https://github.com/thakurshaurya'
 
     return (
